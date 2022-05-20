@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { from } from 'rxjs';
 import { MovimentacaoListComponent } from './movimentacao-list.component';
+
 
 describe('MovimentacaoListComponent', () => {
   let component: MovimentacaoListComponent;
@@ -8,9 +9,8 @@ describe('MovimentacaoListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MovimentacaoListComponent ]
-    })
-    .compileComponents();
+      declarations: [MovimentacaoListComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

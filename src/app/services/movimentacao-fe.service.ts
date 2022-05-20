@@ -10,7 +10,8 @@ const baseUrl = 'http://localhost:8080'; //alterar para o link do API quando onl
 export class MovimentacaoFEService {
 
   constructor(private http: HttpClient) { }
+
   list():Observable<any> {
-    return this.http.get(`${baseUrl}/movimentacoes`)
-    }
+    return this.http.get(`${baseUrl}/movimentacoes`);
+  }
 }
